@@ -12,9 +12,15 @@ Requirements:
     
     Keyboard firmware,
    http://www.tinkernut.com/demos/arduino_hid/arduino_hid.zip
+   
+   
+   
 
 connect keyboard's clock to pin 2 or 3 (external interrupt)
 and connect keyboard's data to any digital pin
+
+
+
 
     to remap your keyboard, go to customkey.h
    https://github.com/fmented/PS2Macros/blob/master/macro/customkey.h
@@ -26,9 +32,12 @@ and
    https://github.com/fmented/PS2Macros/blob/master/macro/keytab.h
     
     
+    
 
 you can also add some stuff in setting.h
 https://github.com/fmented/PS2Macros/blob/master/macro/setting.h
+
+
 
 
     if you need a modifier key use:
@@ -39,13 +48,19 @@ or
     if you need more than one modifier, use:
     usb[0]=CTRL+SHIFT;
 
+
+
 to send a keystroke use:
 sendKey();
 if you use sendKey(); make sure to use releaseKey(); everytime you send a keystroke, 
 otherwise it can causes an error to your computer.
 or you can simply use pressKey(); so you don't need to worry if you forgot to releaseKey(); 
 
+
+
     note: Please done your code before you flash your arduino.
+
+
 
 
 Here’s a link to the keycap images:
