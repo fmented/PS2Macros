@@ -5,25 +5,25 @@ Requirements:
 
 
     PS2Utils library,
-    https://github.com/rogerta/PS2Utils
+   https://github.com/rogerta/PS2Utils
     
     Flip (for Windows),
-    https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/FLIP
+   https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/FLIP
     
     Keyboard firmware,
-    http://www.tinkernut.com/demos/arduino_hid/arduino_hid.zip
+   http://www.tinkernut.com/demos/arduino_hid/arduino_hid.zip
 
 connect keyboard's clock to pin 2 or 3 (external interrupt)
 and connect keyboard's data to any digital pin
 
     to remap your keyboard, go to customkey.h
-    https://github.com/fmented/PS2Macros/blob/master/macro/customkey.h
+   https://github.com/fmented/PS2Macros/blob/master/macro/customkey.h
     
 and
 
     change usb[2] value to any key you want to send
     see keytab.h
-    https://github.com/fmented/PS2Macros/blob/master/macro/keytab.h
+   https://github.com/fmented/PS2Macros/blob/master/macro/keytab.h
     
     
 
