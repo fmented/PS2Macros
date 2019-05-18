@@ -4,8 +4,10 @@ turn ps2 keyboards into macro keyboards using Arduino Uno
 Requirements:
     PS2Utils library,
     https://github.com/rogerta/PS2Utils
+    
     Flip (for Windows),
     https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/FLIP
+    
     Keyboard firmware,
     http://www.tinkernut.com/demos/arduino_hid/arduino_hid.zip
 
