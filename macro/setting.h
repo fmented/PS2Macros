@@ -42,27 +42,7 @@ void check_in(){
   }
 
 
-  }
-//  else{
-//       int count = keyboard.available();
-//  if (count > 0) {
-//    PS2Keyboard::Key k1 = keyboard.read();
-//    
-//    y = k1.code();
-//    normal(y);
-//    
-//  }
-//
-//  int count2 = keyboard2.available();
-//   if (count2 > 0) {
-//     PS2Keyboard::Key k2 = keyboard2.read();
-//     int z = 1000+k2.code();
-//     normal(z);
-//}
-//    
-//  }
-//	
-//}
+}
 
 void check_in_2(){
   int count = keyboard2.available();
