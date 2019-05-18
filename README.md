@@ -1,4 +1,4 @@
-# PS2Macro
+# PS2Macros
 turn ps2 keyboards into macro keyboards using Arduino Uno
 
 Requirements:
