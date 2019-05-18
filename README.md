@@ -1,27 +1,45 @@
-# PS2KeyboardMacro
-turn a ps2 keyboard into a macro keyboard using Arduino Uno
+# PS2Macro
+turn ps2 keyboards into macro keyboards using Arduino Uno
 
 Requirements:
-    PS2KeyAdvanced Library,
+    PS2Utils library,
+    https://github.com/rogerta/PS2Utils
     Flip (for Windows),
+    https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/FLIP
     Keyboard firmware,
+    http://www.tinkernut.com/demos/arduino_hid/arduino_hid.zip
 
-connect keyboard clock to pin 2 or 3
-connect keyboard data to pin 1 (usually it can be any digital pin but it seems didn't work at least in my case)
+connect keyboard's clock to pin 2 or 3 (external interrupt)
+and connect keyboard's data to any digital pin
 
-you need to modify ksend function
+to remap your keyboard, go to customkey.h
+https://github.com/fmented/PS2Macros/blob/master/macro/customkey.h
+
 change usb[2] value to any key you want to send
-see Keytab.h
+see keytab.h
+https://github.com/fmented/PS2Macros/blob/master/macro/keytab.h
+
+you can also add some stuff in setting.h
+https://github.com/fmented/PS2Macros/blob/master/macro/setting.h
+
 if you need a modifier key use:
 usb[0]=CTRL; or usb[0]=ALT;
+
 if you need more than one modifier, use:
 usb[0]=CTRL+SHIFT;
+
 to send a keystroke use:
 sendKey();
-make sure to use releaseKey(); everytime you send a keystroke.
+if you use sendKey(); make sure to use releaseKey(); everytime you send a keystroke, 
+otherwise it can causes an error to your computer.
+or you can simply use pressKey(); so you don't need to worry if you forgot to releaseKey(); 
 
-note: keyboard LED indicators wouldn't work if keyboard data connected to pin 1.
-      done your code before you flash your arduino
+note: Please done your code before you flash your arduino.
+
+
+Here’s a link to the keycap images:
+https://www.dropbox.com/s/ei97zf83ivaa9i4/taran%20keys%205.png?dl=0
+thanks to Taran from LTT
 
       
    
