@@ -1,17 +1,21 @@
 # PS2Macros
+
 turn ps2 keyboards into macro keyboards using Arduino Uno
+in this case I'm using 2 PS2 Keyboard and two self-lock buttons as a multiplexer
+so I got 208 keys * 4 channels = 832 keys
 
-Requirements:
+
+**Requirements:**
 
 
-    PS2Utils library,
-   https://github.com/rogerta/PS2Utils
+   **PS2Utils library**
+   >https://github.com/rogerta/PS2Utils
     
-    Flip (for Windows),
-   https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/FLIP
+   **Flip (for Windows)**
+   >https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/FLIP
     
-    Keyboard firmware,
-   http://www.tinkernut.com/demos/arduino_hid/arduino_hid.zip
+   **Keyboard firmware**
+   >http://www.tinkernut.com/demos/arduino_hid/arduino_hid.zip
    
    
    
@@ -27,26 +31,10 @@ and connect keyboard's data to any digital pin
     
 and
 
-    change usb[2] value to any key you want to send
-    see keytab.h
+    change the value to any key you want to send
+    for key definitions you can see at keytab.h
    https://github.com/fmented/PS2Macros/blob/master/macro/keytab.h
     
-    
-    
-
-you can also add some stuff in setting.h
-https://github.com/fmented/PS2Macros/blob/master/macro/setting.h
-
-
-
-
-    if you need a modifier key use:
-    usb[0]=CTRL; or usb[0]=ALT;
-   
-or   
-
-    if you need more than one modifier, use:
-    usb[0]=CTRL+SHIFT;
 
 
 
@@ -54,9 +42,13 @@ to send a keystroke use:
 sendKey();
 if you use sendKey(); make sure to use releaseKey(); everytime you send a keystroke, 
 otherwise it can causes an error to your computer.
-or you can simply use pressKey(); so you don't need to worry if you forgot to releaseKey(); 
+or you can simply use pressKey(*modifier* , *key* ); so you don't need to worry if you forgot to releaseKey(); 
 
 
+
+you can also add some stuff in setting.h and com.h
+https://github.com/fmented/PS2Macros/blob/master/macro/setting.h
+https://github.com/fmented/PS2Macros/blob/master/macro/com.h
 
     note: Please done your code before you flash your arduino.
 
