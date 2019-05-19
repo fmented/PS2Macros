@@ -2,12 +2,12 @@
 #include "com.h"
 
 
-void custom1(uint16_t x){
+void custom3(uint16_t x){
 
 switch (x){
         case (41):   //esc
         //do something
-Serial.println("key1");
+        Serial.println("key1 cus3");
         break;
         case (58):   //f1
         //do something
@@ -325,7 +325,7 @@ Serial.println("key1");
 //second keyboard
          case(1041):   //esc
         //do something
-Serial.println("key2");
+Serial.println("key2 cus3");
         break;
         case(1058):   //f1
         //do something

@@ -215,6 +215,8 @@ PS2Keyboard::Key PS2Keyboard::read() {
   Key key = buffer_[tail_];
   tail_  = (tail_ + 1) % kBufferArraySize;
   return key;
+
+  
 }
 
 void PS2Keyboard::end() {
