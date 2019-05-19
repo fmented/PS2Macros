@@ -1,12 +1,13 @@
 #include "com.h"
+#include "keytab.h"
+
 
 
 void normal(uint16_t x){
 
 switch (x){
         case (41):   //esc
-//              pressKey(0,x);
-Serial.println(x);
+              pressKey(0,x);
         break;
         case (58):   //f1
               pressKey(0,x);
