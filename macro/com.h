@@ -2,9 +2,9 @@
 #define COM_H
 
 
-int hold;
 
-uint8_t usb[8]{};
+
+uint8_t usb[8]{};  //keybord report. https://wiki.osdev.org/USB_Human_Interface_Devices
 
 
 
