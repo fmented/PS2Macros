@@ -19,22 +19,19 @@ void releaseKey(){
 
 
 
-void pressKey(uint8_t modifier, uint8_t keypress){
+void pressKey(uint8_t modifier, uint8_t key1,uint8_t key2=0,uint8_t key3=0,uint8_t key4=0,uint8_t key5=0,uint8_t key6=0 ){
 
   usb[0]=modifier;
-  usb[2]=keypress;
+  usb[2]=key1;
+  usb[3]=key2;
+  usb[4]=key3;
+  usb[5]=key4;
+  usb[6]=key5;
+  usb[7]=key6;
   sendKey();
   releaseKey();
   }
   
-void wordKey(String w){
-  int n = w.length()+1;
-  char words[n];
-  w.toCharArray(words,n);
-  for (int i=0; i < n; i++){
-    
-      pressKey(0,words[i]);
-  }
-}
+
 
 #endif

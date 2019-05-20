@@ -1,11 +1,11 @@
-#ifndef TAB_H
-#define TAB_H
+#ifndef KEYTAB_H
+#define KEYTAB_H
 
 
-#define CTRL 0x01  //
-#define SHIFT 0x02 //
-#define ALT 0x04   //
-#define GUI 0x08   //
+#define CTRL 1  //
+#define SHIFT 2 //
+#define ALT 4   //
+#define GUI 8   //
 #define A 4 			//
 #define B 5 			//
 #define C 6 			//

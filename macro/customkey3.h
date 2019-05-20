@@ -1,9 +1,9 @@
 #include "keytab.h"
 #include "com.h"
+#include "event_to_hid.h"
 
 
 void custom3(uint16_t x){
-
 switch (x){
         case (41):   //esc
         //do something
