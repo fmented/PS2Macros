@@ -6,6 +6,11 @@ in this case I'm using 2 PS2 Keyboards and two self-lock buttons as a multiplexe
 >
 so I got (208 keys * 4 channels) 832 programmable keys
 
+    I'm not a real programmer and I know it isn't the good way to program,
+    but it still works.
+    maybe some of you could help me to make it better in a correct way.
+    Thanks.
+
 
 # Requirements:
 
