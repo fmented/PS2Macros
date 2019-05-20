@@ -2,7 +2,7 @@
 #define COM_H
 
 
-uint8_t usb[8]{0}; //Keyboard report. learn more here : https://wiki.osdev.org/USB_Human_Interface_Devices
+uint8_t usb[8]{}; //Keyboard report. learn more here : https://wiki.osdev.org/USB_Human_Interface_Devices
 
 
 
