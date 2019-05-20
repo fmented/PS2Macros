@@ -57,13 +57,8 @@ otherwise it can causes an error to your computer.
 or you can simply use pressKey(*modifier* , *key* ); so you don't need to worry if you forgot to releaseKey(); 
 >
 >
-
-
-you can also add some stuff in setting.h and com.h
-https://github.com/fmented/PS2Macros/blob/master/macro/setting.h
-https://github.com/fmented/PS2Macros/blob/master/macro/com.h
 >
->
+>if you want to type some texts you can use wordKey("*your text*");
 >
 >
 
