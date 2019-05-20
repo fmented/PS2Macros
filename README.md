@@ -56,9 +56,7 @@ otherwise it can causes an error to your computer.
 >
 or you can simply use pressKey(*modifier* , *key* ); so you don't need to worry if you forgot to releaseKey(); 
 >
->
->
->if you want to type some texts you can use wordKey("*your text*");
+if you want to type some texts you can use wordKey("*your text*");
 >
 >
 
