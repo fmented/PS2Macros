@@ -307,7 +307,7 @@ void wordKey(String w){
   for (int i=0; i < n-1; i++){
     
       event_hid(words[i]);
-    
+    delay(1);
   }
 }
 

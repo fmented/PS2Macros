@@ -2,10 +2,14 @@
 #define KEYTAB_H
 
 
-#define CTRL 1  //
-#define SHIFT 2 //
-#define ALT 4   //
-#define GUI 8   //
+#define CTRL 0x01  //
+#define SHIFT 0x02 //
+#define ALT 0x04   //
+#define GUI 0x08   //
+#define RCTRL 0x10  //
+#define RSHIFT 0x20 //
+#define RALT 0x40   //
+#define RGUI 0x80   //
 #define A 4 			//
 #define B 5 			//
 #define C 6 			//
@@ -104,13 +108,13 @@
 #define MENU 101     //
 #define APP 102 		//
 #define KPEQUAL 103		//
-#define LCTRL 224		//
-#define LSHIFT 225		//
-#define LALT 226		//
-#define LGUI 227		//
-#define RCTRL 228		//
-#define RSHIFT 229		//
-#define RALT 230		//
-#define RGUI 231		//
+//#define LCTRL 224		//
+//#define LSHIFT 225		//
+//#define LALT 226		//
+//#define LGUI 227		//
+//#define RCTRL 228		//
+//#define RSHIFT 229		//
+//#define RALT 230		//
+//#define RGUI 231		//
 
 #endif //

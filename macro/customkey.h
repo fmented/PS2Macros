@@ -7,43 +7,56 @@ void custom1(uint16_t x){
 switch (x){
         case (41):   //esc
         //do something
-Serial.println("key1");
+        pressKey(GUI,D);
+        pressKey(ALT,F4);
         break;
         case (58):   //f1
         //do something
+        pressKey(CTRL+SHIFT+ALT,x);
         break;
          case (59):   //f2
         //do something
+        pressKey(CTRL+SHIFT+ALT,x);
         break;
          case (60):   //f3
         //do something
+        pressKey(CTRL+SHIFT+ALT,x);
         break;
          case (61):   //f4
         //do something
+        pressKey(CTRL+SHIFT+ALT,x);
         break;
          case (62):   //f5
         //do something
+        pressKey(CTRL+SHIFT+ALT,x);
         break;
          case (63):   //f6
         //do something
+        pressKey(CTRL+SHIFT+ALT,x);
         break;
          case (64):   //f7
         //do something
+        pressKey(CTRL+SHIFT+ALT,x);
         break;
          case (65):   //f8
         //do something
+        pressKey(CTRL+SHIFT+ALT,x);
         break;
          case (66):   //f9
         //do something
+        pressKey(CTRL+SHIFT+ALT,x);
         break;
          case (67):   //f10
         //do something
+        pressKey(CTRL+SHIFT+ALT,x);
         break;
          case (68):   //f11
         //do something
+        pressKey(CTRL+SHIFT+ALT,x);
         break;
          case (69):   //f12
         //do something
+        pressKey(CTRL+SHIFT+ALT,x);
         break;
          case (70):   //print scr
          //do something

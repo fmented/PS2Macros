@@ -7,13 +7,18 @@ uint8_t usb[8]{}; //Keyboard report. learn more here : https://wiki.osdev.org/US
 
 
 void sendKey(){
-  Serial.write(usb,8);
-
+Serial.write(usb,8);
 }
+
 
 void releaseKey(){
   usb[0]=0;
   usb[2]=0;
+  usb[3]=0;
+  usb[4]=0;
+  usb[5]=0;
+  usb[6]=0;
+  usb[7]=0;
   sendKey();
 }
 
@@ -29,7 +34,9 @@ void pressKey(uint8_t modifier, uint8_t key1,uint8_t key2=0,uint8_t key3=0,uint8
   usb[6]=key5;
   usb[7]=key6;
   sendKey();
+  delay(1);
   releaseKey();
+  delay(1);
   }
   
 
